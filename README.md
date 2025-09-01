@@ -130,7 +130,9 @@ Pipeline_IoT_Docker/
 
 ## Dashboards Ativos
 ## 📋 Dashboard de Temperaturas IoT
-<img src="docs/Dashboard_Temperatura.png" alt="Dashboard de Temperaturas IoT" width="400"/>
+<div style="text-align: center;">
+  <img src="docs/Dashboard_Temperatura.png" alt="Dashboard de Temperaturas IoT" width="300"/>
+</div>
 Este trecho do código cria a tabela temperature_logs no PostgreSQL e insere os dados do CSV.
 
 Conecta ao banco usando SQLAlchemy (get_db_connection()).
@@ -143,7 +145,9 @@ Ao finalizar, uma mensagem de sucesso é exibida no dashboard (st.success).
 
 
 ## 📊 Média de Temperatura por Dispositivo
-<img src="docs/Dashboard_Temperatura_Dispositivo.png" alt="Média de Temperatura por Dispositivo" width="400"/>
+<div style="text-align: center;">
+  <img src="docs/Dashboard_Temperatura_Dispositivo.png" alt="Média de Temperatura por Dispositivo" width="300"/>
+</div>
 Este gráfico de barras mostra a temperatura média registrada por cada dispositivo IoT.
 
 **- Eixo X:** Identificação do dispositivo (device_id)
@@ -154,7 +158,9 @@ O gráfico permite visualizar rapidamente quais dispositivos estão registrando 
 
 
 ## 📈 Leituras por Hora do Dia
-<img src="docs/Leitura_Hora_Dia.png" alt="Leituras por Hora do Dia" width="400"/>
+<div style="text-align: center;">
+  <img src="docs/Temperaturas_Min_Max.png" alt="Temperaturas Máximas e Mínimas por Dia" width="300"/>
+</div>
 Este gráfico de linha mostra o número de leituras registradas em cada hora do dia.
 
 **- Eixo X:** Hora do dia (hora)
@@ -165,7 +171,9 @@ Permite identificar os períodos em que os dispositivos IoT registram mais ou me
 
 
 ## 📉 Temperaturas Máximas e Mínimas por Dia
-<img src="docs/Temperaturas_Min_Max.png" alt="Temperaturas Máximas e Mínimas por Dia" width="400"/>
+<div style="text-align: center;">
+  <img src="docs/Leitura_Hora_Dia.png" alt="Leituras por Hora do Dia" width="300"/>
+</div>
 Este gráfico de linha exibe as temperaturas máxima e mínima registradas em cada dia.
 
 **- Eixo X:** Data (data)
