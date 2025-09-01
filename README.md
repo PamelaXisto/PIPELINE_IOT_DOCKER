@@ -67,7 +67,7 @@ O script conecta ao PostgreSQL e insere os dados automaticamente na tabela tempe
 ## 🔍 Views SQL Utilizadas
 
 O projeto utiliza as seguintes views no PostgreSQL para facilitar as análises:
-´´´bash
+```
 -- Média de temperatura por dispositivo
 CREATE OR REPLACE VIEW avg_temp_por_dispositivo AS
 SELECT device_id, AVG(temp) AS avg_temp
@@ -90,7 +90,7 @@ SELECT DATE(noted_date) AS data,
 FROM temperature_logs
 GROUP BY DATE(noted_date)
 ORDER BY data;
-´´´
+```
 
 ## 📊 Visualização dos Dados
 
@@ -108,7 +108,7 @@ Quantidade de leituras por hora
 Temperaturas máxima e mínima por dia
 
 ## 📂 Estrutura do Projeto
-´´´bash
+```
 Pipeline_IoT_Docker/
 │── data/
 │   └── IOT-temp.csv          # Arquivo de dados IoT (CSV)
@@ -125,4 +125,4 @@ Pipeline_IoT_Docker/
 │── .env                      # Variáveis de ambiente (credenciais do PostgreSQL)
 │── requirements.txt          # Dependências do projeto
 │── README.md                 # Documentação
-´´´
+```
