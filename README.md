@@ -130,9 +130,9 @@ Pipeline_IoT_Docker/
 
 ## Dashboards Ativos
 ## 📋 Dashboard de Temperaturas IoT
-<div style="text-align: center;">
+<p align="center">
   <img src="docs/Dashboard_Temperatura.png" alt="Dashboard de Temperaturas IoT" width="300"/>
-</div>
+</p>
 Este trecho do código cria a tabela temperature_logs no PostgreSQL e insere os dados do CSV.
 
 Conecta ao banco usando SQLAlchemy (get_db_connection()).
