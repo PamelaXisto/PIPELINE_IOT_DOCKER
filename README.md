@@ -145,9 +145,9 @@ Ao finalizar, uma mensagem de sucesso é exibida no dashboard (st.success).
 
 
 ## 📊 Média de Temperatura por Dispositivo
-<div style="text-align: center;">
+<p align="center">
   <img src="docs/Dashboard_Temperatura_Dispositivo.png" alt="Média de Temperatura por Dispositivo" width="300"/>
-</div>
+</p>
 Este gráfico de barras mostra a temperatura média registrada por cada dispositivo IoT.
 
 **- Eixo X:** Identificação do dispositivo (device_id)
@@ -158,9 +158,9 @@ O gráfico permite visualizar rapidamente quais dispositivos estão registrando 
 
 
 ## 📈 Leituras por Hora do Dia
-<div style="text-align: center;">
+<p align="center">
   <img src="docs/Temperaturas_Min_Max.png" alt="Temperaturas Máximas e Mínimas por Dia" width="300"/>
-</div>
+</p>
 Este gráfico de linha mostra o número de leituras registradas em cada hora do dia.
 
 **- Eixo X:** Hora do dia (hora)
@@ -171,9 +171,9 @@ Permite identificar os períodos em que os dispositivos IoT registram mais ou me
 
 
 ## 📉 Temperaturas Máximas e Mínimas por Dia
-<div style="text-align: center;">
+<p align="center">
   <img src="docs/Leitura_Hora_Dia.png" alt="Leituras por Hora do Dia" width="300"/>
-</div>
+</p>
 Este gráfico de linha exibe as temperaturas máxima e mínima registradas em cada dia.
 
 **- Eixo X:** Data (data)
