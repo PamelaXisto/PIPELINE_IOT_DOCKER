@@ -127,3 +127,49 @@ Pipeline_IoT_Docker/
 │── requirements.txt          # Dependências do projeto
 │── README.md                 # Documentação
 ```
+
+## DashBoards Ativo
+### Dashboard de Temperaturas IoT
+![Dashboard de Temperaturas IoT](docs/Dashboard_Temperatura.png)
+Este trecho do código cria a tabela temperature_logs no PostgreSQL e insere os dados do CSV.
+
+Conecta ao banco usando SQLAlchemy (get_db_connection()).
+
+Utiliza o DataFrame do Pandas (df) para popular a tabela.
+
+O parâmetro if_exists='replace' garante que, caso a tabela já exista, ela seja substituída pelos novos dados.
+
+Ao finalizar, uma mensagem de sucesso é exibida no dashboard (st.success).
+
+
+### Média de Temperatura por Dispositivo
+![Média de Temperatura por Dispositivo](docs/Dashboard_Temperatura_Dispositivo.png)
+Este gráfico de barras mostra a temperatura média registrada por cada dispositivo IoT.
+
+**- Eixo X:** Identificação do dispositivo (device_id)
+
+**- Eixo Y:** Temperatura média (avg_temp) calculada a partir das leituras registradas
+
+O gráfico permite visualizar rapidamente quais dispositivos estão registrando temperaturas mais altas ou mais baixas, facilitando a análise do comportamento dos sensores.
+
+
+### Leituras por Hora do Dia
+![Leituras por Hora do Dia](docs/Leitura_Hora_Dia.png)
+Este gráfico de linha mostra o número de leituras registradas em cada hora do dia.
+
+**- Eixo X:** Hora do dia (hora)
+
+**- Eixo Y:** Quantidade de leituras (contagem)
+
+Permite identificar os períodos em que os dispositivos IoT registram mais ou menos leituras, ajudando a analisar padrões de operação ou atividade dos sensores.
+
+
+### Temperaturas Máximas e Mínimas por Dia
+![Temperaturas Máximas e Mínimas por Dia](docs/Temperaturas_Min_Max.png)
+Este gráfico de linha exibe as temperaturas máxima e mínima registradas em cada dia.
+
+**- Eixo X:** Data (data)
+
+**- Eixo Y:** Temperatura (temp_max e temp_min)
+
+Permite acompanhar a variação diária das temperaturas captadas pelos sensores, evidenciando picos e quedas ao longo do tempo.
