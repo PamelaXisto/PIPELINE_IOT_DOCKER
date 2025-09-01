@@ -128,9 +128,9 @@ Pipeline_IoT_Docker/
 │── README.md                 # Documentação
 ```
 
-## DashBoards Ativo
-### Dashboard de Temperaturas IoT
-![Dashboard de Temperaturas IoT](docs/Dashboard_Temperatura.png)
+## Dashboards Ativos
+## 📋 Dashboard de Temperaturas IoT
+<img src="docs/Dashboard_Temperatura.png" alt="Dashboard de Temperaturas IoT" width="400"/>
 Este trecho do código cria a tabela temperature_logs no PostgreSQL e insere os dados do CSV.
 
 Conecta ao banco usando SQLAlchemy (get_db_connection()).
@@ -142,8 +142,8 @@ O parâmetro if_exists='replace' garante que, caso a tabela já exista, ela seja
 Ao finalizar, uma mensagem de sucesso é exibida no dashboard (st.success).
 
 
-### Média de Temperatura por Dispositivo
-![Média de Temperatura por Dispositivo](docs/Dashboard_Temperatura_Dispositivo.png)
+## 📊 Média de Temperatura por Dispositivo
+<img src="docs/Dashboard_Temperatura_Dispositivo.png" alt="Média de Temperatura por Dispositivo" width="400"/>
 Este gráfico de barras mostra a temperatura média registrada por cada dispositivo IoT.
 
 **- Eixo X:** Identificação do dispositivo (device_id)
@@ -153,8 +153,8 @@ Este gráfico de barras mostra a temperatura média registrada por cada disposit
 O gráfico permite visualizar rapidamente quais dispositivos estão registrando temperaturas mais altas ou mais baixas, facilitando a análise do comportamento dos sensores.
 
 
-### Leituras por Hora do Dia
-![Leituras por Hora do Dia](docs/Leitura_Hora_Dia.png)
+## 📈 Leituras por Hora do Dia
+<img src="docs/Leitura_Hora_Dia.png" alt="Leituras por Hora do Dia" width="400"/>
 Este gráfico de linha mostra o número de leituras registradas em cada hora do dia.
 
 **- Eixo X:** Hora do dia (hora)
@@ -164,8 +164,8 @@ Este gráfico de linha mostra o número de leituras registradas em cada hora do 
 Permite identificar os períodos em que os dispositivos IoT registram mais ou menos leituras, ajudando a analisar padrões de operação ou atividade dos sensores.
 
 
-### Temperaturas Máximas e Mínimas por Dia
-![Temperaturas Máximas e Mínimas por Dia](docs/Temperaturas_Min_Max.png)
+## 📉 Temperaturas Máximas e Mínimas por Dia
+<img src="docs/Temperaturas_Min_Max.png" alt="Temperaturas Máximas e Mínimas por Dia" width="400"/>
 Este gráfico de linha exibe as temperaturas máxima e mínima registradas em cada dia.
 
 **- Eixo X:** Data (data)
