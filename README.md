@@ -1,8 +1,8 @@
-📊 Pipeline de Dados com IoT e Docker
+# 📊 Pipeline de Dados com IoT e Docker
 
 Este projeto tem como objetivo a construção de um pipeline de dados para IoT, utilizando Docker, PostgreSQL e Python (Streamlit e Pandas). O sistema coleta, armazena e exibe leituras de temperatura enviadas por dispositivos IoT.
 
-🚀 Tecnologias Utilizadas
+## 🚀 Tecnologias Utilizadas
 
 Docker para orquestração e execução do PostgreSQL
 
@@ -14,7 +14,7 @@ Streamlit para visualização dos dados
 
 Pandas para manipulação de dados
 
-🐳 Configuração do Docker com PostgreSQL
+## 🐳 Configuração do Docker com PostgreSQL
 
 Baixe a imagem oficial do PostgreSQL:
 
@@ -30,7 +30,7 @@ Confirme se o container está ativo:
 
 docker ps
 
-🗄️ Estrutura da Tabela
+## 🗄️ Estrutura da Tabela
 
 A tabela principal utilizada é temperature_logs:
 
@@ -41,7 +41,7 @@ CREATE TABLE temperature_logs (
     noted_date TIMESTAMP
 );
 
-📥 Populando o Banco com CSV
+## 📥 Populando o Banco com CSV
 
 Os dados de leitura de sensores IoT estão disponíveis em CSV. Para popular o banco, utilize o script inserir_dados.py.
 
@@ -64,10 +64,10 @@ python inserir_dados.py
 
 O script conecta ao PostgreSQL e insere os dados automaticamente na tabela temperature_logs.
 
-🔍 Views SQL Utilizadas
+## 🔍 Views SQL Utilizadas
 
 O projeto utiliza as seguintes views no PostgreSQL para facilitar as análises:
-
+´´´bash
 -- Média de temperatura por dispositivo
 CREATE OR REPLACE VIEW avg_temp_por_dispositivo AS
 SELECT device_id, AVG(temp) AS avg_temp
@@ -90,8 +90,9 @@ SELECT DATE(noted_date) AS data,
 FROM temperature_logs
 GROUP BY DATE(noted_date)
 ORDER BY data;
+´´´
 
-📊 Visualização dos Dados
+## 📊 Visualização dos Dados
 
 Execute o main.py com Streamlit para acessar os gráficos e relatórios:
 
@@ -106,7 +107,8 @@ Quantidade de leituras por hora
 
 Temperaturas máxima e mínima por dia
 
-📂 Estrutura do Projeto
+## 📂 Estrutura do Projeto
+´´´bash
 Pipeline_IoT_Docker/
 │── data/
 │   └── IOT-temp.csv          # Arquivo de dados IoT (CSV)
@@ -123,3 +125,4 @@ Pipeline_IoT_Docker/
 │── .env                      # Variáveis de ambiente (credenciais do PostgreSQL)
 │── requirements.txt          # Dependências do projeto
 │── README.md                 # Documentação
+´´´
