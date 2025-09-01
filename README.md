@@ -181,3 +181,21 @@ Este gráfico de linha exibe as temperaturas máxima e mínima registradas em ca
 **- Eixo Y:** Temperatura (temp_max e temp_min)
 
 Permite acompanhar a variação diária das temperaturas captadas pelos sensores, evidenciando picos e quedas ao longo do tempo.
+
+## 🛠️ Comandos Git Utilizados
+
+Aqui estão os principais comandos utilizados para versionamento e envio do projeto para o GitHub:
+
+### Inicialização do Repositório
+```bash
+git init               # Inicializa o repositório local
+git add .              # Adiciona todos os arquivos ao stage
+git commit -m "Primeiro commit do projeto"   # Cria o primeiro commit
+git remote add origin https://github.com/seu-usuario/seu-repositorio.git  # Conecta ao repositório no GitHub
+git push -u origin main  # Envia os arquivos para o GitHub
+git pull               # Puxa atualizações do repositório remoto
+git add .              # Adiciona novos arquivos ou alterações
+git commit -m "Descrição da alteração"  # Commit com mensagem descritiva
+git push               # Envia alterações para o GitHub
+
+```
