@@ -4,46 +4,47 @@ Este projeto tem como objetivo a construção de um pipeline de dados para IoT, 
 
 ## 🚀 Tecnologias Utilizadas
 
-Docker para orquestração e execução do PostgreSQL
+**- Docker:** para orquestração e execução do PostgreSQL
 
-PostgreSQL como banco de dados relacional
+**- PostgreSQ:** como banco de dados relacional
 
-Python 3.10+ para desenvolvimento do pipeline
+**- Python 3.10+:** para desenvolvimento do pipeline
 
-Streamlit para visualização dos dados
+**- Streamlit:** para visualização dos dados
 
-Pandas para manipulação de dados
+**- Pandas:** para manipulação de dados
 
 ## 🐳 Configuração do Docker com PostgreSQL
 
-Baixe a imagem oficial do PostgreSQL:
+**Baixe a imagem oficial do PostgreSQL:**
 
-docker pull postgres:latest
-
-
-Crie e rode o container:
-
-docker run --name postgres-iot -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=iot_db -p 5432:5432 -d postgres
+```docker pull postgres:latest```
 
 
-Confirme se o container está ativo:
+**Crie e rode o container:**
 
-docker ps
+```docker run --name postgres-iot -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=iot_db -p 5432:5432 -d postgres```
+
+
+**Confirme se o container está ativo:**
+
+```docker ps```
 
 ## 🗄️ Estrutura da Tabela
 
-A tabela principal utilizada é temperature_logs:
-
+**A tabela principal utilizada é temperature_logs:**
+```
 CREATE TABLE temperature_logs (
     id SERIAL PRIMARY KEY,
     device_id VARCHAR(50),
     temp NUMERIC,
     noted_date TIMESTAMP
 );
+```
 
 ## 📥 Populando o Banco com CSV
 
-Os dados de leitura de sensores IoT estão disponíveis em CSV. Para popular o banco, utilize o script inserir_dados.py.
+Os dados de leitura de sensores IoT estão disponíveis em CSV. Para popular o banco, utilize o script **inserir_dados.py.**
 
 Estrutura esperada do CSV:
 
@@ -59,14 +60,14 @@ Certifique-se de que o arquivo CSV está na pasta do projeto.
 
 Rode o script:
 
-python inserir_dados.py
+```python inserir_dados.py```
 
 
 O script conecta ao PostgreSQL e insere os dados automaticamente na tabela temperature_logs.
 
 ## 🔍 Views SQL Utilizadas
 
-O projeto utiliza as seguintes views no PostgreSQL para facilitar as análises:
+O projeto utiliza as seguintes **views no PostgreSQL** para facilitar as análises:
 ```
 -- Média de temperatura por dispositivo
 CREATE OR REPLACE VIEW avg_temp_por_dispositivo AS
@@ -94,9 +95,9 @@ ORDER BY data;
 
 ## 📊 Visualização dos Dados
 
-Execute o main.py com Streamlit para acessar os gráficos e relatórios:
+Execute o **main.py com Streamlit** para acessar os gráficos e relatórios:
 
-streamlit run main.py
+```streamlit run main.py```
 
 
 No dashboard, é possível visualizar:
