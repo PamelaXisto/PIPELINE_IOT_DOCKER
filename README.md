@@ -2,6 +2,8 @@
 
 Este projeto tem como objetivo a construção de um pipeline de dados para IoT, utilizando Docker, PostgreSQL e Python (Streamlit e Pandas). O sistema coleta, armazena e exibe leituras de temperatura enviadas por dispositivos IoT.
 
+**BASE DE DADOS: https://www.kaggle.com/datasets/atulanandjha/temperature-readings-iot-devices**
+
 ## 🚀 Tecnologias Utilizadas
 
 **- Docker:** para orquestração e execução do PostgreSQL
@@ -30,6 +32,10 @@ Este projeto tem como objetivo a construção de um pipeline de dados para IoT, 
 
 ```docker ps```
 
+<p align="center">
+  <img src="docs/docker_ativo" alt="container Docker ativo" width="300"/>
+</p>
+
 ## 🗄️ Estrutura da Tabela
 
 **A tabela principal utilizada é temperature_logs:**
@@ -54,13 +60,17 @@ temp → Temperatura registrada
 
 noted_date → Data/hora da leitura
 
+<p align="center">
+  <img src="docs/CSV_dbeave.png" alt="CSV no dbeave" width="300"/>
+</p>
+
 Executando a carga de dados:
 
 Certifique-se de que o arquivo CSV está na pasta do projeto.
 
 Rode o script:
 
-```python inserir_dados.py```
+```python main.py```
 
 
 O script conecta ao PostgreSQL e insere os dados automaticamente na tabela temperature_logs.
