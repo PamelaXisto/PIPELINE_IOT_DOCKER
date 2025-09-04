@@ -1,6 +1,6 @@
 # 📊 Pipeline de Dados com IoT e Docker
 
-Este projeto tem como objetivo a construção de um pipeline de dados para IoT, utilizando Docker, PostgreSQL e Python (Streamlit e Pandas). O sistema coleta, armazena e exibe leituras de temperatura enviadas por dispositivos IoT.
+Este projeto acadêmico, tem como objetivo a construção de um pipeline de dados para IoT, utilizando Docker, PostgreSQL e Python (Streamlit e Pandas). O sistema coleta, armazena e exibe leituras de temperatura enviadas por dispositivos IoT.
 
 **BASE DE DADOS: https://www.kaggle.com/datasets/atulanandjha/temperature-readings-iot-devices**
 
