@@ -33,7 +33,7 @@ Este projeto tem como objetivo a construção de um pipeline de dados para IoT, 
 ```docker ps```
 
 <p align="center">
-  <img src="docs/docker_ativo" alt="container Docker ativo" width="300"/>
+  <img src="docs/docker_ativo.png" alt="container Docker ativo" width="300"/>
 </p>
 
 ## 🗄️ Estrutura da Tabela
