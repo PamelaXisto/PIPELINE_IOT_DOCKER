@@ -169,8 +169,9 @@ O gráfico permite visualizar rapidamente quais dispositivos estão registrando 
 
 ## 📈 Leituras por Hora do Dia
 <p align="center">
-  <img src="docs/Temperaturas_Min_Max.png" alt="Temperaturas Máximas e Mínimas por Dia" width="300"/>
+  <img src="docs/Leitura_Hora_Dia.png" alt="Leituras por Hora do Dia" width="300"/>
 </p>
+
 Este gráfico de linha mostra o número de leituras registradas em cada hora do dia.
 
 **- Eixo X:** Hora do dia (hora)
@@ -182,7 +183,7 @@ Permite identificar os períodos em que os dispositivos IoT registram mais ou me
 
 ## 📉 Temperaturas Máximas e Mínimas por Dia
 <p align="center">
-  <img src="docs/Leitura_Hora_Dia.png" alt="Leituras por Hora do Dia" width="300"/>
+  <img src="docs/Temperaturas_Min_Max.png" alt="Temperaturas Máximas e Mínimas por Dia" width="300"/>
 </p>
 Este gráfico de linha exibe as temperaturas máxima e mínima registradas em cada dia.
 
